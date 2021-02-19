@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#app{
+  height: 100%;
+}
+html {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #f4f6f8;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  height: 100%;
+}
+
+.onboarding {
+  &-wrapper {
+    width: 1200px;
+  }
+}
+
+.restaurant-info {
+  padding: 24px 0;
+  &-img {
+    position: inline-block;
+  }
+}
+
+.ant-tabs-nav {
+  padding: 0 10px;
+  margin-bottom: 0 !important; 
+}
+.ant-layout {
+  height: 100%;
+}
+.ant-tabs-content{
+  height: 100%;
+}
+.ant-tabs-top {
+  height: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+.ant-layout-sider-zero-width-trigger{
+  top: 0;
+}
+.dishcards{
+  padding: '0 24px';
+  display: 'flex';
+  flex: 0 1 auto;
+}
+
+.dishcard{
+  &-menu{
+    height: 100%;
+  }
+  &-info {
+    height: 70%;
+    //margin: -10px 0 0 0;
+    //border: 0.1px solid green;
+  }
+
+  &-price {
+    height: 30%;
+    //border: 0.1px solid red;
+  }
+  
+  &-item{
+    display: inline-block;
+    margin: 10px;
+    width: 340px;
+    height: 150px;
+    .ant-card-body{
+      padding: 10px;
+      height:100%;
+    }
+  }
+
+  &-img{
+    //border: 0.1px solid #E8E8E8;
+    //border-radius: 5px 5px 5px 5px;
+    position: absolute;
+    bottom:19px;
+  }
+
+  &-countBlock {
+    float:right;
+    width:79px;
+    height:100%;
+    bottom: 0;
+    //border: 0.1px solid blue;
+
+    &-minus {
+      bottom: 4px;
+      background-color: #2e4e7e;
+      box-shadow: 0 9px 18px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      right: 53px;
+    }
+
+    &-plus {
+      bottom: 4px;
+      background-color: #2e4e7e;
+      box-shadow: 0 9px 18px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  &-addToCartBtn {
+    border-radius: 5px 5px 5px 5px;
+    width:40%;
+    height:70%;
+    float:right;
+    font-size: 5px;
+    background-color: #2e4e7e;
+    line-height: 90%;
+    box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+    top: 10px;
+    font-weight: bold;
+    padding: 0px;
+    color: white;
+  }
+}
+
+.header {
+  background-color: #001529;
+  height: 5%;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+
+  span {
+    color: white;
+    font-size: 20px;
+    margin-left: 100px;
+  };
+  .logo {
+    display: inline-block;
+    height: 80%;
+    :hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.priceAffix {
+  position: fixed;
+  right: 40px;
+  bottom: 135px;
+  border-radius: 10px 10px 10px 10px;
+  width:auto;
+  height:15px;
+  line-height: 15px;
+  background-color: #130665;
+  text-align: center;
+  color:white;
+}
+
+.basketAffix {
+  position: fixed;
+  right: 20px;
+  bottom: 102px;
+}
+
+.basketButton {
+  overflow: hidden;
+  transform: translatez(0);
+  box-shadow: 0 9px 18px rgba(0,0,0,0.5);
+  background-color: #2e4e7e;
+}
+
+.checkout {
+  position:absolute;
+  border-radius: 25px;
+  background: #73AD21;
+  height: 50px;
+  background-color: #2e4e7e;
+  box-shadow: 0 9px 18px rgba(0,0,0,0.5);
+  bottom: 3%;
+
+  button {
+    border-radius: 0 25px 25px 0;
+    width:80px;
+    height:50px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    float:right;
+  }
+  div {
+    border-radius: 25px 0 0 25px;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    background-color: #2e4e7e;
+    color: white;
+    text-align: center;
+  }
+}
+.cart-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.cart-form {
+  margin-top: 5%;
+  margin-bottom: 20%;
+}
+.itemList {
+  max-height:75%;
+  overflow-y: scroll;
+  width:102%;
+  background-color:#E8E8E8;
+  border-radius: 15px 15px 15px 15px;
+  min-height: auto;
+  max-height: auto;
+  overflow-y: auto;
+}
+
+.textArea {
+  width:100%;
+  border-radius: 15px 15px 15px 15px;
+  bottom:10%;
+}
+
+.progress-icon{
+  cursor: pointer;
+}
